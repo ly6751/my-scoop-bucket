@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Diorser/LiteMonitor",
     "license": "MIT",
     "url": "https://github.com/Diorser/LiteMonitor/releases/download/v1.1.2/LiteMonitor_v1.1.2-win-x64.zip",
-    "hash": "848b7764a856334639733075677864f19ca1e2e775f0a05a0d667c1775f92276",
+    "hash": "2164A94F32B3B0EBA1927A4C0ADAFB42C1C55D82083F1C3077D1E7406519D2D7",
     "extract_dir": "LiteMonitor",
     "bin": "LiteMonitor.exe",
     "shortcuts": [
