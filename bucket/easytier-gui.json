@@ -11,7 +11,9 @@
     "uninstaller": {
         "args": ["/S"]
     },
-    "bin": "easytier-gui.exe",
+    "shortcuts": [
+        ["$env:LocalAppData\\easytier-gui\\easytier-gui.exe", "EasyTier GUI"]
+    ],
     "checkver": {
         "github": "https://github.com/EasyTier/EasyTier",
         "re": "easytier-gui_([\\d.]+)_x64-setup\\.exe"
