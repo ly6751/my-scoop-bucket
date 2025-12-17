@@ -4,7 +4,7 @@
     "homepage": "https://github.com/EasyTier/EasyTier",
     "license": "Apache-2.0",
     "url": "https://github.com/EasyTier/EasyTier/releases/download/v2.4.5/easytier-gui_2.4.5_x64-setup.exe",
-    "hash": "1198f12111f181f62136006e86da9159074d0811e5a88e932402127926b68f9a",
+    "hash": "57727f955a01c9d2ac4566b9320cf383a3e446ebc5f882e7995aa5195a4ef1f0",
     "innosetup": true,
     "bin": "easytier-gui.exe",
     "shortcuts": [
