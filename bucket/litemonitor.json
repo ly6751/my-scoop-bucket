@@ -1,15 +1,13 @@
 {
     "version": "1.1.2",
     "description": "LiteMonitor - 极简系统监控工具",
-    "homepage": "https://github.com/Diorser/LiteMonitor",
-    "license": "MIT",
     "persist": [
         "settings.json",
         "TrafficHistory.json"
     ],
     "url": "https://github.com/Diorser/LiteMonitor/releases/download/v1.1.2/LiteMonitor_v1.1.2-win-x64.zip",
     "hash": "2164a94f32b3b0eba1927a4c0adafb42c1c55d82083f1c3077d1e7406519d2d7",
-    "extract_dir": "LiteMonitor_v$version-win-x64",
+    "extract_dir": "LiteMonitor_v1.1.2-win-x64",
     "bin": "LiteMonitor.exe",
     "shortcuts": [
         ["LiteMonitor.exe", "LiteMonitor"]
