@@ -1,0 +1,20 @@
+name: Auto Update Scoop Manifests
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # 每 6 小时自动运行
+  workflow_dispatch:      # 允许手动在 GitHub 页面点击运行
+
+jobs:
+  update:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update Manifests
+        uses: ScoopInstaller/GithubActions@master
+        with:
+          # 只对 bucket 目录下的文件进行版本检查和自动哈希计算
+          command: 'checkver'
