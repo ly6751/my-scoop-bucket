@@ -6,13 +6,14 @@
     "url": "https://github.com/EasyTier/EasyTier/releases/download/v2.4.5/easytier-gui_2.4.5_x64-setup.exe",
     "hash": "57727f955a01c9d2ac4566b9320cf383a3e446ebc5f882e7995aa5195a4ef1f0",
     "installer": {
-        "args": ["/S"]
+        "args": ["/S", "/D=$dir"]
     },
     "uninstaller": {
         "args": ["/S"]
     },
+    "bin": "easytier-gui.exe",
     "shortcuts": [
-        ["$env:LocalAppData\\easytier-gui\\easytier-gui.exe", "EasyTier GUI"]
+        ["easytier-gui.exe", "EasyTier GUI"]
     ],
     "checkver": {
         "github": "https://github.com/EasyTier/EasyTier",
