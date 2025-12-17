@@ -3,14 +3,15 @@
     "description": "LiteMonitor - 极简系统监控工具",
     "homepage": "https://github.com/Diorser/LiteMonitor",
     "license": "MIT",
-    "url": "https://github.com/Diorser/LiteMonitor/releases/download/1.1.2/LiteMonitor.zip",
+    "url": "https://github.com/Diorser/LiteMonitor/releases/download/v1.1.2/LiteMonitor_v1.1.2-win-x64.zip",
     "hash": "848b7764a856334639733075677864f19ca1e2e775f0a05a0d667c1775f92276",
+    "extract_dir": "LiteMonitor",
     "bin": "LiteMonitor.exe",
     "shortcuts": [
         ["LiteMonitor.exe", "LiteMonitor"]
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Diorser/LiteMonitor/releases/download/$version/LiteMonitor.zip"
+        "url": "https://github.com/Diorser/LiteMonitor/releases/download/v$version/LiteMonitor_v$version-win-x64.zip"
     }
 }
