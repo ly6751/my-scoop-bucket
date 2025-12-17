@@ -9,6 +9,7 @@
         "args": ["/S", "/D=$dir"]
     },
     "uninstaller": {
+        "file": "uninstall.exe",
         "args": ["/S"]
     },
     "bin": "easytier-gui.exe",
