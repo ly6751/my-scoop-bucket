@@ -4,14 +4,15 @@
     "homepage": "https://github.com/Diorser/LiteMonitor",
     "license": "MIT",
     "url": "https://github.com/Diorser/LiteMonitor/releases/download/v1.1.2/LiteMonitor_v1.1.2-win-x64.zip",
-    "hash": "2164A94F32B3B0EBA1927A4C0ADAFB42C1C55D82083F1C3077D1E7406519D2D7",
-    "extract_dir": "LiteMonitor",
+    "hash": "2164a94f32b3b0eba1927a4c0adafb42c1c55d82083f1c3077d1e7406519d2d7",
+    "extract_dir": "LiteMonitor_v1.1.2-win-x64",
     "bin": "LiteMonitor.exe",
     "shortcuts": [
         ["LiteMonitor.exe", "LiteMonitor"]
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Diorser/LiteMonitor/releases/download/v$version/LiteMonitor_v$version-win-x64.zip"
+        "url": "https://github.com/Diorser/LiteMonitor/releases/download/v$version/LiteMonitor_v$version-win-x64.zip",
+        "extract_dir": "LiteMonitor_v$version-win-x64"
     }
 }
