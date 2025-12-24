@@ -1,8 +1,8 @@
 name: Auto Update Scoop Manifests
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每 6 小时自动运行
-  workflow_dispatch:      # 允许手动在 GitHub 页面点击运行
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -10,11 +10,19 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Update Manifests
         uses: ScoopInstaller/GithubActions@master
         with:
-          # 只对 bucket 目录下的文件进行版本检查和自动哈希计算
-          command: 'checkver'
+          # 核心参数：
+          checkver: 'true'  # 检查版本并更新 manifest
+          update: 'true'    # 如果版本变了，自动更新 hash
+          # 如果你的 manifest 在根目录，不需要配置。如果在子目录，action 会自动扫描。
+
+      - name: Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Autoupdate LiteMonitor to latest version" || exit 0
+          git push
